@@ -15,21 +15,21 @@ let
     extraInstallCommands = ''
       # Install the icon
       install -Dm444 ${helium-icon} "$out/share/icons/hicolor/scalable/apps/helium.svg"
-
-      # Create or update the desktop entry to use the icon
-      if [ -f "$out/share/applications/helium.desktop" ]; then
-        sed -i 's/^Icon=.*/Icon=helium/' "$out/share/applications/helium.desktop"
-      fi
+      
+      # Create the desktop file
+      mkdir -p "$out/share/applications"
+      cat > "$out/share/applications/helium.desktop" << 'EOF'
+[Desktop Entry]
+Name=Helium
+GenericName=Web Browser
+Exec=helium %U
+Icon=helium
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;x-scheme-handler/http;x-scheme-handler/https;
+EOF
+      chmod 444 "$out/share/applications/helium.desktop"
     '';
-    desktopItem = pkgs.makeDesktopItem {
-      name = "helium";
-      desktopName = "Helium";
-      exec = "helium";
-      icon = "helium";
-      genericName = "Web Browser";
-      categories = [ "Network" "WebBrowser" ];
-      mimeType = [ "text/html" "x-scheme-handler/http" "x-scheme-handler/https" ];
-    };
   };
 in
 {
