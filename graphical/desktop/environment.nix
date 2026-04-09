@@ -1,11 +1,34 @@
 { config, pkgs, inputs, ... }:
 let
+  helium-icon = pkgs.fetchurl {
+    url = "https://raw.githubusercontent.com/imputnet/helium/refs/heads/main/resources/branding/product_logo.svg";
+    sha256 = "0qhxnfpymdx3j4h8f9zrd1ld8yk9hw7abjqixzpn9652i7i5r0yy";
+  };
+
   helium = pkgs.appimageTools.wrapType2 {
     pname = "helium";
     version = "0.10.9.1";
     src = pkgs.fetchurl {
       url = "https://github.com/imputnet/helium-linux/releases/download/0.10.9.1/helium-0.10.9.1-x86_64.AppImage";
       sha256 = "14c3b8801db33a38609a37c4fd3d177436f434c0cab1016ecf2fceae0d620f8f";
+    };
+    extraInstallCommands = ''
+      # Install the icon
+      install -Dm444 ${helium-icon} "$out/share/icons/hicolor/scalable/apps/helium.svg"
+
+      # Create or update the desktop entry to use the icon
+      if [ -f "$out/share/applications/helium.desktop" ]; then
+        sed -i 's/^Icon=.*/Icon=helium/' "$out/share/applications/helium.desktop"
+      fi
+    '';
+    desktopItem = pkgs.makeDesktopItem {
+      name = "helium";
+      desktopName = "Helium";
+      exec = "helium";
+      icon = "helium";
+      genericName = "Web Browser";
+      categories = [ "Network" "WebBrowser" ];
+      mimeType = [ "text/html" "x-scheme-handler/http" "x-scheme-handler/https" ];
     };
   };
 in
