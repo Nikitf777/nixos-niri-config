@@ -19,7 +19,7 @@
         ids = [ "*" ];
         settings = {
           main = {
-            meta = "overload(meta, f12)";
+            meta = "overload(meta, scrolllock)";
           };
         };
       };
