@@ -13,4 +13,6 @@
     ./programs.nix
     ./services.nix
   ];
+
+  security.polkit.enable = true;
 }

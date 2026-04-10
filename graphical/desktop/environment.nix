@@ -15,7 +15,7 @@ let
     extraInstallCommands = ''
       # Install the icon
       install -Dm444 ${helium-icon} "$out/share/icons/hicolor/scalable/apps/helium.svg"
-      
+
       # Create the desktop file
       mkdir -p "$out/share/applications"
       cat > "$out/share/applications/helium.desktop" << 'EOF'
@@ -34,6 +34,10 @@ EOF
 in
 {
   environment = {
+    shells = [
+      pkgs.nushell
+    ];
+
     etc."niri/config.kdl".source = ./config/niri/global.kdl;
 
     sessionVariables = rec {
@@ -57,6 +61,7 @@ in
       libreoffice
       clapper
       gnome-tweaks
+      zenity
 
       # Gaming
       heroic
