@@ -22,6 +22,9 @@ run = 'sudo -A nixos-rebuild switch --specialisation gaming --flake .#nixos'
 [tasks.switch-server]
 run = 'sudo -A nixos-rebuild switch --specialisation server --flake .#nixos'
 
+[tasks.boot]
+run = 'sudo -A nixos-rebuild boot --flake .#nixos'
+
 [tasks.boot-desktop]
 run = 'sudo -A nixos-rebuild boot --specialisation desktop --flake .#nixos'
 
