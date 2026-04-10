@@ -4,6 +4,9 @@ SUDO_ASKPASS = './askpass.sh'
 [tasks.build]
 run = 'nixos-rebuild build --flake .#nixos'
 
+[tasks.b]
+run = 'mise build'
+
 [tasks.test-desktop]
 run = 'sudo -A nixos-rebuild test --specialisation desktop --flake .#nixos'
 
@@ -13,6 +16,15 @@ run = 'sudo -A nixos-rebuild test --specialisation gaming --flake .#nixos'
 [tasks.test-server]
 run = 'sudo -A nixos-rebuild test --specialisation server --flake .#nixos'
 
+[tasks.td]
+run = 'mise test-desktop'
+
+[tasks.tg]
+run = 'mise test-gaming'
+
+[tasks.ts]
+run = 'mise test-server'
+
 [tasks.switch-desktop]
 run = 'sudo -A nixos-rebuild switch --specialisation desktop --flake .#nixos'
 
@@ -21,6 +33,15 @@ run = 'sudo -A nixos-rebuild switch --specialisation gaming --flake .#nixos'
 
 [tasks.switch-server]
 run = 'sudo -A nixos-rebuild switch --specialisation server --flake .#nixos'
+
+[tasks.sd]
+run = 'mise switch-desktop'
+
+[tasks.sg]
+run = 'mise switch-gaming'
+
+[tasks.ss]
+run = 'mise switch-server'
 
 [tasks.boot]
 run = 'sudo -A nixos-rebuild boot --flake .#nixos'
@@ -33,3 +54,12 @@ run = 'sudo -A nixos-rebuild boot --specialisation gaming --flake .#nixos'
 
 [tasks.boot-server]
 run = 'sudo -A nixos-rebuild boot --specialisation server --flake .#nixos'
+
+[tasks.bd]
+run = 'mise boot-desktop'
+
+[tasks.bg]
+run = 'mise boot-gaming'
+
+[tasks.bs]
+run = 'mise boot-server'
