@@ -8,13 +8,13 @@ run = 'nixos-rebuild build --flake .#nixos'
 run = 'mise build'
 
 [tasks.test-desktop]
-run = 'sudo -A nixos-rebuild test --specialisation desktop --flake .#nixos'
+run = './rebuild.sh test desktop'
 
 [tasks.test-gaming]
-run = 'sudo -A nixos-rebuild test --specialisation gaming --flake .#nixos'
+run = './rebuild.sh test gaming'
 
 [tasks.test-server]
-run = 'sudo -A nixos-rebuild test --specialisation server --flake .#nixos'
+run = './rebuild.sh test server'
 
 [tasks.td]
 run = 'mise test-desktop'
@@ -26,13 +26,13 @@ run = 'mise test-gaming'
 run = 'mise test-server'
 
 [tasks.switch-desktop]
-run = 'sudo -A nixos-rebuild switch --specialisation desktop --flake .#nixos'
+run = './rebuild.sh switch desktop'
 
 [tasks.switch-gaming]
-run = 'sudo -A nixos-rebuild switch --specialisation gaming --flake .#nixos'
+run = './rebuild.sh switch gaming'
 
 [tasks.switch-server]
-run = 'sudo -A nixos-rebuild switch --specialisation server --flake .#nixos'
+run = './rebuild.sh switch server'
 
 [tasks.sd]
 run = 'mise switch-desktop'
@@ -47,13 +47,13 @@ run = 'mise switch-server'
 run = 'sudo -A nixos-rebuild boot --flake .#nixos'
 
 [tasks.boot-desktop]
-run = 'sudo -A nixos-rebuild boot --specialisation desktop --flake .#nixos'
+run = './rebuild.sh boot desktop'
 
 [tasks.boot-gaming]
-run = 'sudo -A nixos-rebuild boot --specialisation gaming --flake .#nixos'
+run = './rebuild.sh boot gaming'
 
 [tasks.boot-server]
-run = 'sudo -A nixos-rebuild boot --specialisation server --flake .#nixos'
+run = './rebuild.sh boot server'
 
 [tasks.bd]
 run = 'mise boot-desktop'
