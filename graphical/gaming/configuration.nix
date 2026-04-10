@@ -8,15 +8,14 @@
   imports =
     [
       ../configuration.nix
-      # Doesn't  work for now
-      # ./boot.nix
+      ./boot.nix
       ./environment.nix
       ./programs.nix
       ./services.nix
       ./systemd.nix
     ];
 
-    users.users.steamuser = {
+  users.users.steamuser = {
       isNormalUser = true;
       description = "";
       extraGroups = [ "networkmanager" ];
