@@ -8,9 +8,8 @@
   imports =
   [
     ../configuration.nix
-    ./boot.nix
-    ./environment.nix
-    ./programs.nix
-    ./services.nix
   ];
+
+  # Use latest LTS hardened kernel.
+  boot.kernelPackages = pkgs.linuxPackages_6_12_hardened;
 }

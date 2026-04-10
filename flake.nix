@@ -50,6 +50,12 @@
                 ./graphical/gaming/configuration.nix
               ];
             };
+
+            server.configuration = { config, pkgs, ... }: {
+              imports = [
+                ./headless/server/configuration.nix
+              ];
+            };
           };
         }
       ];

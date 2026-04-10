@@ -8,6 +8,8 @@
   imports =
     [
       ../configuration.nix
+      # Doesn't  work for now
+      # ./boot.nix
       ./environment.nix
       ./programs.nix
       ./services.nix

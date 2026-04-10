@@ -5,12 +5,4 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports =
-  [
-    ../configuration.nix
-    ./boot.nix
-    ./environment.nix
-    ./programs.nix
-    ./services.nix
-  ];
 }
