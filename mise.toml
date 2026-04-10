@@ -1,0 +1,32 @@
+[env]
+SUDO_ASKPASS = './askpass.sh'
+
+[tasks.build]
+run = 'nixos-rebuild build --flake .#nixos'
+
+[tasks.test-desktop]
+run = 'sudo -A nixos-rebuild test --specialisation desktop --flake .#nixos'
+
+[tasks.test-gaming]
+run = 'sudo -A nixos-rebuild test --specialisation gaming --flake .#nixos'
+
+[tasks.test-server]
+run = 'sudo -A nixos-rebuild test --specialisation server --flake .#nixos'
+
+[tasks.switch-desktop]
+run = 'sudo -A nixos-rebuild switch --specialisation desktop --flake .#nixos'
+
+[tasks.switch-gaming]
+run = 'sudo -A nixos-rebuild switch --specialisation gaming --flake .#nixos'
+
+[tasks.switch-server]
+run = 'sudo -A nixos-rebuild switch --specialisation server --flake .#nixos'
+
+[tasks.boot-desktop]
+run = 'sudo -A nixos-rebuild boot --specialisation desktop --flake .#nixos'
+
+[tasks.boot-gaming]
+run = 'sudo -A nixos-rebuild boot --specialisation gaming --flake .#nixos'
+
+[tasks.boot-server]
+run = 'sudo -A nixos-rebuild boot --specialisation server --flake .#nixos'
