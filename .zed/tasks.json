@@ -1,0 +1,12 @@
+[
+  {
+    "label": "nixos-rebuild: Build",
+    "command": "mise",
+    "args": ["build"],
+    "reveal": "no_focus",
+    "hide": "never",
+    "shell": {
+      "program": "nu",
+    },
+  },
+]
