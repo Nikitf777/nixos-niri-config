@@ -45,78 +45,32 @@ in
     };
 
     systemPackages = with pkgs; [
-      # System
-      home-manager
+      # Desktoop
+      xwayland-satellite
+      zenity
+
+      # General-purpose GUI apps
       bazaar
-      distrobox
       distroshelf
       mission-center
       resources
-      gpg-tui
-      pinentry-all
-      file
-
-      # Desktoop
-      xwayland-satellite
       libreoffice
       clapper
       gnome-tweaks
-      zenity
 
       # Gaming
       heroic
 
-      # Terminal
-      ghostty
-      msedit
-      nushell
-      neovim
-      bat
-      ripgrep
-      btop
-      nvtopPackages.full
-      wl-clipboard
-      jq
-
-      # Development
-      git
-      lazygit
+      # Development (GUI)
       github-desktop
       gitbutler
-      jujutsu
-      lazyjj
-      jjui
-      gg-jj
-      gcc
-      clang
-      cmake
-      rustup
-      rust-analyzer
-      python3
-      typescript
-      nodejs_25
-      deno
-      bun
-      dotnet-sdk_10
-      dotnet-aspnetcore_10
-      jdk25
-      go
-      zig
       vscode
       zed-editor
       devtoolbox
-      docker
-      podman
-      mise
-      devbox
-      sqlite
-      lazysql
-      sqlit-tui
       godot
       godot-mono
-      qwen-code
 
-      # Internet
+      # Internet (GUI)
       google-chrome
       telegram-desktop
       discord
