@@ -21,6 +21,8 @@
       ghostty
       msedit
       nushell
+      zellij
+      tmux
       neovim
       bat
       ripgrep
@@ -28,6 +30,7 @@
       nvtopPackages.full
       wl-clipboard
       jq
+      yazi
       fd
       television
 
