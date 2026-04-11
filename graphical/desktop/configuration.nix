@@ -14,5 +14,4 @@
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  security.polkit.enable = true;
 }
