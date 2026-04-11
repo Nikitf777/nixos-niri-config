@@ -34,6 +34,7 @@
       fd
       television
       wget
+      fastfetch
 
       # Development
       git
