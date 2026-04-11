@@ -8,11 +8,11 @@
   imports =
   [
     ../configuration.nix
-    ./boot.nix
     ./environment.nix
     ./programs.nix
     ./services.nix
   ];
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   security.polkit.enable = true;
 }
