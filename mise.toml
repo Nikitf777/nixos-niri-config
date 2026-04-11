@@ -1,5 +1,5 @@
 [env]
-SUDO_ASKPASS = './askpass.sh'
+SUDO_ASKPASS = './askpass.nu'
 
 [tasks.build]
 run = 'nixos-rebuild build --flake .#nixos'
@@ -8,13 +8,13 @@ run = 'nixos-rebuild build --flake .#nixos'
 run = 'mise build'
 
 [tasks.test-desktop]
-run = './rebuild.sh test desktop'
+run = './rebuild.nu test desktop'
 
 [tasks.test-gaming]
-run = './rebuild.sh test gaming'
+run = './rebuild.nu test gaming'
 
 [tasks.test-server]
-run = './rebuild.sh test server'
+run = './rebuild.nu test server'
 
 [tasks.td]
 run = 'mise test-desktop'
@@ -26,13 +26,13 @@ run = 'mise test-gaming'
 run = 'mise test-server'
 
 [tasks.switch-desktop]
-run = './rebuild.sh switch desktop'
+run = './rebuild.nu switch desktop'
 
 [tasks.switch-gaming]
-run = './rebuild.sh switch gaming'
+run = './rebuild.nu switch gaming'
 
 [tasks.switch-server]
-run = './rebuild.sh switch server'
+run = './rebuild.nu switch server'
 
 [tasks.sd]
 run = 'mise switch-desktop'
@@ -47,13 +47,13 @@ run = 'mise switch-server'
 run = 'sudo -A nixos-rebuild boot --flake .#nixos'
 
 [tasks.boot-desktop]
-run = './rebuild.sh boot desktop'
+run = './rebuild.nu boot desktop'
 
 [tasks.boot-gaming]
-run = './rebuild.sh boot gaming'
+run = './rebuild.nu boot gaming'
 
 [tasks.boot-server]
-run = './rebuild.sh boot server'
+run = './rebuild.nu boot server'
 
 [tasks.bd]
 run = 'mise boot-desktop'
