@@ -33,6 +33,7 @@
       yazi
       fd
       television
+      wget
 
       # Development
       git
