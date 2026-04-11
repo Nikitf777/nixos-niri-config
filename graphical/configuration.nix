@@ -9,4 +9,5 @@
     [
       ./services.nix
     ];
+    security.rtkit.enable = true;
 }
