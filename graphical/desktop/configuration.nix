@@ -11,6 +11,7 @@
     ./environment.nix
     ./programs.nix
     ./services.nix
+    ./wallpapers.nix
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;

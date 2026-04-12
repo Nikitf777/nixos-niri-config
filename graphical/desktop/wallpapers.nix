@@ -1,0 +1,338 @@
+{ config, pkgs, lib, ... }:
+
+let
+  wallpapers = [
+
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/dogs-surrealism-5120x2880-14395.jpg";
+            sha256 = "449dd22a17af258c8b155c984e1dbe240c421b17b70015ab6dc1a6f60b241744";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/castorice-butterfly-5120x2880-25920.jpg";
+            sha256 = "3f6f2ac803ae1471faad4a9a9f919921dfe8db494123a45ed55afd3d3901fc73";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/vibrant-fluid-5120x2880-25900.jpg";
+            sha256 = "1ab151b6f8288881e9221cddfc6172497ec66644cd648e3567e794f8b636ba2c";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/frieren-beyond-5120x2880-25925.jpg";
+            sha256 = "dcc574e6d21fe432d37922ed92eadfacbb066e3d5ce6033e3c187b210a382f5f";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/romantic-night-sky-5120x2880-25549.jpg";
+            sha256 = "4a14cf341769a7d9426ab8eaff25602421695f9a4193d6d5b0e72cdbb0e97973";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/colorful-abstract-8920x3000-25884.jpg";
+            sha256 = "567e1b2a132c8b8b28cc58f083b6f174f34cd9643db6daf04b5bbebc026c80e6";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/women-romantic-5120x2880-25570.jpg";
+            sha256 = "47857634d85dbf5caefc0ba1b6e7e56e35e2c0e0435f40ec322c1d299dba8a6e";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/samsung-galaxy-tab-5120x3632-25729.jpg";
+            sha256 = "7e6398f0b92c22a714a7ab587a315520c09092d813b4aad656ff33783557117f";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/spheres-colorful-5120x5120-25755.png";
+            sha256 = "370e9026442b0e35099332a114fe3f3b95575b7e0c317695d6f8633cb5599748";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/geometric-frosted-5120x2880-25542.jpg";
+            sha256 = "552509e777fd03e04fe9cc886c8f7424856c66dec85c2d70e180010562214b5b";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/honor-magic-8-pro-5120x2880-25543.jpg";
+            sha256 = "9e77a3662d55726fe85dee50520e0bf17a9b0edf82705aae96e6721ad4a28702";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/battlefield-6-3840x2160-25692.jpg";
+            sha256 = "3e2881c1e7a9228369cd03d1fe243d2c936ec4aec116a95614d596cf693c857d";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/geometric-explosion-3840x2160-25852.png";
+            sha256 = "a13290b229e4bc243975a750c116c62e69c5070b9a24793c6c31ab056d5c5cab";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/season-2-3840x2160-25710.jpg";
+            sha256 = "c342d31fee7f858b5c8dafcbedb08fc5f66df59d4b52341b6e061ced2b5109a2";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/bioluminescence-3840x2160-25836.jpg";
+            sha256 = "15465ebefa4474bc9b66e332521ec6657e75233e44815e9ab0195bfdb37574f7";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/translucent-ribbons-3840x2160-25856.jpg";
+            sha256 = "63d74b90b56909926d9ba86d02a67295643ee8c5c816133fa8b64fec9ccf5bf6";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/neon-glow-cute-3840x2160-25872.png";
+            sha256 = "33cb19af79ede67048d19eeee9b218c025d89e444cc9ac4d5526ccc695eb6351";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/neon-glow-fuzzy-3840x2160-25873.png";
+            sha256 = "b291ec5a7d973aaa6e5e93286c37371f3418adf596247f1e2e077a64e09c6b3d";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/geometric-3840x2160-25851.png";
+            sha256 = "efecbe05023f68ee1da0fa95a73ae41a863d3478526f8924b8aed6fd944da577";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/pink-flowers-dreams-3840x2160-25845.jpg";
+            sha256 = "80adece7e29fc227d84a54fd8b75a1219ab92855c2fdbd279ac25c01e387ad0c";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/blue-flowers-soft-3840x2160-25842.jpg";
+            sha256 = "681ba9be58e73e28af609441deba50f9764425efc0c973dbbf0e496b9c68bc40";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/terracotta-sand-5120x2880-25874.jpg";
+            sha256 = "d7dfbcd08e49e5453351b64f80e5682bc596bb8c07b6b992040a08ef75ca7f22";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/isometric-icons-3840x2160-25871.png";
+            sha256 = "6ecaa325888f47179069d2d3a85635673c2832651c6379c0f9a70238345a2caf";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/snow-mountains-5312x2819-25476.jpg";
+            sha256 = "43309bbd6c0d13edfee5e6684fa8385a91a10416450d1f1d5b31641833947dd0";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/your-name-couple-3840x2160-25439.jpg";
+            sha256 = "10642ca5090559b5fa1b9f67c1269f51494bae19a365cf7a1bf6b56b9442f852";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/lords-of-the-fallen-3840x2160-25282.jpg";
+            sha256 = "695f8cda4ac216f93a0f4a34a4d704c51c0ef569f6565b1583394e9d49630fff";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/yoshi-mario-5k-the-5120x2880-25274.jpg";
+            sha256 = "a90b494a702defcebe6543b5167815e6e8bb992f4db70baa941878aeb2f07c68";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/castorice-8k-honkai-7680x4320-25706.jpg";
+            sha256 = "8d680dd7cdbd7ac3ba33bc9a61844ccc936d9163fc09dad10278970aac5bf8eb";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/the-odyssey-7680x4320-25035.jpg";
+            sha256 = "36a92ad7bc70a368375df38c135e3ecdd6ceadff22232b4cb46c6cce8363dbd3";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/phantom-blade-zero-3840x2160-25028.jpg";
+            sha256 = "a705c92cabaab80b25d595897d891934b63263d17db710e124ef0c79bd271f75";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/cyberpunk-2077-5th-5120x2880-24843.jpg";
+            sha256 = "9fe05e14f0cf71ca8487a2045359d4e45d9f892208ee8d1ce5cefcd48cf50034";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/abstract-bird-3840x2160-24454.jpg";
+            sha256 = "a028996c57d24447f2790ba64481ebc2915850870496e57f162deeefc2773a26";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/hello-mosaic-5120x2880-25567.png";
+            sha256 = "23cdf6777dfea659c4150c9da6f93ead3bf0ebd7c4cf90e3c8677c204ed5170d";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/microsoft-design-5120x2880-26028.jpg";
+            sha256 = "d6a86472a8f874eb38e412e0b16586bcf75f77aa0b2050b628e06ebb8cf9fdfd";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/japan-artistic-5120x2880-25406.jpg";
+            sha256 = "5d45aedc74624ccf6ef09e8cf8306e7cac0aedc61c7e42e58910dbb1e2a479c0";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/rainbow-bridge-5120x3200-10868.jpg";
+            sha256 = "945f177aaf0873f3a59f0fa1399efe6283e95613bf3ddaa8cf2b43fa9a86d6a1";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/tokyo-tower-japan-metal-structure-cityscape-city-lights-3840x2400-3672.jpg";
+            sha256 = "54ada67f98d642103a5e6b905517b6b4a52b7724d8dbda5196fce194074de31f";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/lotus-flower-purple-5120x2880-25008.jpg";
+            sha256 = "472ae142e20f2bfaab30f99864af5aa5e57c743f15ef51229512138b942f26b6";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/luminous-floral-3840x2160-22787.jpg";
+            sha256 = "fd71c619a72dc9e2f14130eb08f76b9e32f6430a8db92bd65514935e0e3c7ba7";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/tanjiro-kamado-red-5120x2880-22577.png";
+            sha256 = "bd2633084a5575c8fbff62838e2cafe16c22b1a9a5e43d37d863e559c7012577";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/microsoft-50th-3840x2160-22149.jpg";
+            sha256 = "0beadb3c2fcbbbc261e667380da1755f7a1d222ccc4ba2f461042cfe62379227";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/assassins-creed-5120x2880-21642.jpg";
+            sha256 = "10cadb29c39573d81ce5fed6984cfb612c3ea5479476316ff72550645ce7741b";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/astronaut-vacation-5120x2880-21354.jpg";
+            sha256 = "a41abfecac4f2c6c66730b09cdf88d2f01750ea92d2708d53fb495be0efffeb1";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/tulips-field-5120x2880-21582.jpg";
+            sha256 = "59d94f5031e4e5a5bb7c4e1ee04c1596d32eec37c93b187426d2908e90ea216c";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/cgi-landscape-5k-5120x2880-21174.jpg";
+            sha256 = "e9a2ab2c7cf20f3da185729f88e41af93fef937eb42f336c33204493b4a90c7a";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/waves-colorful-art-3840x3840-21059.jpg";
+            sha256 = "ed7dabea264540d54e208196b3f63c91aa65144e1ebebd6187f266acae8eb8ea";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/raiden-shogun-neon-5120x2880-20921.jpg";
+            sha256 = "60d59ddca947b8d62bb7025781000bb2bcfdf482f97a7bad9239d0e72c6c35d3";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/dramatic-scenery-3840x2160-20802.jpg";
+            sha256 = "ce2f1f940e5e809780f1bb98d02092e56c982b6dafd2059d5f5fc476b1ef9c01";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/cosmic-sphere-5120x5120-20444.jpg";
+            sha256 = "c44e9842f4172c9f3a677b9379d98b61ac5ef71ce046a1c2ee5e9d00c1cbb3cf";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/huawei-dark-5120x5120-20057.jpg";
+            sha256 = "f036c2342f2a0b246b20acedacefa6b06cb4cb2ef25390a306e509022ffe0750";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/hollow-knight-video-5120x2880-19933.jpg";
+            sha256 = "b4816dde6e5903e7af20579bf523d2b2aa87a5f3fa00dd471e3b5f47dfec1fe7";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/shinobu-kocho-5120x2880-19754.jpg";
+            sha256 = "3106e48aa347fbabf5f12e5644241564fcdca663370bbb58616d2a88d15ea23c";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/protea-flower-macro-5120x5120-21068.jpg";
+            sha256 = "b7cb64bc8c601d0a75e3462f8363d6adcfaeb0d2ed4bbdad704060bb86f77636";
+        };
+    }
+    {
+        src = pkgs.fetchurl {
+            url = "https://4kwallpapers.com/images/wallpapers/water-lilies-5120x2880-20530.jpg";
+            sha256 = "44516685b7430dbc23c3e4798d7f91c7d8b96a6c212ee0dcbad3ed17f134738f";
+        };
+    }
+  ];
+
+  wallpapersPackage = pkgs.runCommand "system-wallpapers" {} ''
+    mkdir -p $out/share/backgrounds
+    ${lib.concatMapStringsSep "\n" (w: "cp ${w.src} $out/share/backgrounds/") wallpapers}
+  '';
+in {
+  environment.systemPackages = [ wallpapersPackage ];
+}
