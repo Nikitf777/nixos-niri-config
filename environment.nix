@@ -50,6 +50,7 @@
       rustup
       rust-analyzer
       python3
+      vala
       typescript
       nodejs_25
       deno
