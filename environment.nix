@@ -46,6 +46,7 @@
       gg-jj
       gcc
       clang
+      meson
       cmake
       rustup
       rust-analyzer
