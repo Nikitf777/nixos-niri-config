@@ -16,6 +16,7 @@
       gpg-tui
       pinentry-all
       file
+      ddcutil
 
       # Terminal
       ghostty
