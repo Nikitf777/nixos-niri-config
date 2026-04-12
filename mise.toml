@@ -2,7 +2,7 @@
 SUDO_ASKPASS = './askpass.nu'
 
 [tasks.build]
-run = 'nixos-rebuild build --flake .#nixos'
+run = 'nixos-rebuild build --impure --flake .#nixos'
 
 [tasks.b]
 run = 'mise build'
@@ -44,7 +44,7 @@ run = 'mise switch-gaming'
 run = 'mise switch-server'
 
 [tasks.boot]
-run = 'sudo -A nixos-rebuild boot --flake .#nixos'
+run = 'sudo -A nixos-rebuild boot --impure --flake .#nixos'
 
 [tasks.boot-desktop]
 run = './rebuild.nu boot desktop'
