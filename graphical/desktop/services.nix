@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   # Desktop
-  services.displayManager.gdm.enable = true;
+  services.displayManager.sddm.enable = true;
   services.displayManager.sessionPackages = with pkgs; [ niri ];
   services.desktopManager.gnome.enable = true;
   services.xserver = {

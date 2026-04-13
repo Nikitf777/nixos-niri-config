@@ -14,6 +14,11 @@
       flake = false;
     };
 
+    silentSDDM = {
+       url = "github:uiriansan/SilentSDDM";
+       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     quickshell = {
       url = "git+https://git.outfoxxed.me/quickshell/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -25,7 +30,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, bore-scheduler-src, quickshell, zen-browser }@inputs:
+  outputs = { self, nixpkgs, home-manager, bore-scheduler-src, silentSDDM, quickshell, zen-browser }@inputs:
     let
       system = "x86_64-linux";
     in {
