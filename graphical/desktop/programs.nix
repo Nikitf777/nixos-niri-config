@@ -19,6 +19,8 @@
 
       quickshell.package = inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell;
     };
+    gpu-screen-recorder.enable = true;
+    obs-studio.enable = true;
 
     # Gaming
     steam.enable = true;
