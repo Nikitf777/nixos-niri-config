@@ -1,5 +1,4 @@
 { pkgs, lib, ... }:
-
 let
   wallpapers = [
     {
@@ -534,6 +533,270 @@ let
       src = pkgs.fetchurl {
         url = "https://4kwallpapers.com/images/wallpapers/minecraft-game-3840x2160-16737.jpg";
         sha256 = "0f8437925f0a3c29c37342ef5aaa705a5cca6db58e1f27362c35436271554e5c";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/484717.jpg";
+        sha256 = "85292fb0a96c0aa0b50844cfe1927993f51fe345b58b1e5c46b1dc32a0c2e436";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/1406945.png";
+        sha256 = "c4177cdb7e77104eac6e2f5b1939e511f705d62e905d5d88ac7c145853be797a";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/alps-snow-mountains-7680x4320-25451.jpg";
+        sha256 = "d196d257660df3241f87b8abd552c44103805437d86d7532af0480047d348fae";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/aniket-deole-M6XC789HLe8-unsplash.jpg";
+        sha256 = "f89ef192794ba5d24dcdbe816d79a9e2d8f210b021917448465c568f96e11209";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg";
+        sha256 = "80ed16c9192673bbd3cfeb8d571a8e7dfe8ca8e26f8ed56b124ce06f1b3f4602";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/catpuccin.jpg";
+        sha256 = "c4abcbfbcddf451ef4313ecab99be9dea5fc672c8039016691c84acedf9dfa70";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg";
+        sha256 = "d1498035a6a1061655943b5b910545592f8d7b4ca9e8a5d62e0282c2266dae11";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/daniel-olah-6KQETG8J-zI-unsplash.jpg";
+        sha256 = "ad8faa0da39c18be335f97e0b0cdf9f6078c94e74f937cb6796569dcde52e87a";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774599941568874389.jpg";
+        sha256 = "c34973173099385c66c1a761e8d123be2f48a32963ad9ea8e1567c28d945b5a2";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774600419550128303.jpg";
+        sha256 = "d40474a39f372e145d5e8616cb047f08d755e33cc924aad1902453114ade25fb";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774602437113595776.jpg";
+        sha256 = "736c7fe83977f481d55398220c6a185b6320f13be59439c25513cefdb66f9982";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774602438144596334.jpg";
+        sha256 = "26a82c3b10c4b95f5a144418388c52dedeb31a0f389d5d46d9f449e620c4ed37";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774605382531553461.jpg";
+        sha256 = "cd22ee618ed67e28134049ffc31489b7876972a88caed89d925d22c1b3535097";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774615767798027909.jpg";
+        sha256 = "18a339d6807a11f6a49f7b4a224041111227ab7b8a0b715f390aba3b4db74bbd";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774620413402932064.jpg";
+        sha256 = "a6d3e11d2d599b7df98cd1513719d3b6919e9f9c5264b24ba23b397acdd3a293";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774622043210650029.jpg";
+        sha256 = "cee135f8cd47425cb2f0a316348f7b1be0288c157efd67ad8b01b8068c0ae460";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774639067688695478.jpg";
+        sha256 = "f11c8abb9cadf6c84e61f591b0eecc7796dd0b786949da54b620f572c3cc9ebd";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774643182329880408.jpg";
+        sha256 = "d3a25fe4c25a2e1713730d3a3f0780b32aa4ffd9e93ea4a47676004d281df5a0";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774645026033718947.jpg";
+        sha256 = "23df48277a4d73e56aae590d561bf934739f9011fa94037cd57b17054d4de51d";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774648312988462566.jpg";
+        sha256 = "ae11d972b803810bcdd47a61f268f466b1ed23c64291ae0e34d28690001a8f41";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774713636683994897.jpg";
+        sha256 = "9642cb76cd075375e99e74bc37ef60570586225288a9dc2b1b92c4e10e4f8fbb";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774716902087709339.jpg";
+        sha256 = "8d612e351e783203ec66033d32b799fd07eda6b678e59f89c22fba8914b2e452";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774782189461707769.jpg";
+        sha256 = "31d542c84b4404025e4605a7cb4539225c63b377c9ade2c4ecbf72488fee8af5";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774782671625932995.jpg";
+        sha256 = "eda21193c121eecb22a6a1fd6acd6f9e21cc96ff3bd30b5419332b5cf02b22a8";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1774901723427810975.jpg";
+        sha256 = "700bb26af2f61dcfc515910e7a03615824da15e1b4a8f4629d9c453c5075e4a8";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1775465948835529174.jpg";
+        sha256 = "36fcadb674d533504f583a92d2baee05e3cb7ab98e8db3f82c80fdff496bd03d";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1775465959941627817.jpg";
+        sha256 = "6103f1b9aa59d74fc7cd49c210da55fd66999cbd1f773a2a84048d8489544cd1";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1775598782454694145.jpg";
+        sha256 = "b49bb1a417cde08aa2a19a2ae002b9decbd1dd394cd0ffa0702d447ad895a1d8";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ddg_1775600700665865616.jpg";
+        sha256 = "a6495a3be08f266e11d3afcc38e25bd356cf1fc489fbcb965bbb4fb5be0c2632";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/golden-hour-desert-3840x2160-25452.jpg";
+        sha256 = "b3168f9032523769b9360a6c8ed0d6c8c3536c9fcf2197dd3c82b1934ce8cb33";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/jms-kFHz9Xh3PPU-unsplash.jpg";
+        sha256 = "4c9a0372d85fe7939dfa42d21705ba580a792c767c8d15af54f2889d50b780e4";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/johannes-plenio-RwHv7LgeC7s-unsplash.jpg";
+        sha256 = "c3253e9b96102be2940f403765d416810995264c5e25d265f91d87e17730d30b";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ken-cheung-KonWFWUaAuk-unsplash.jpg";
+        sha256 = "be87b042edd071de87842b3b4b4d6b42fe10e70c3bfdade1ddd5d19c01664623";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/milad-fakurian-E8Ufcyxz514-unsplash.jpg";
+        sha256 = "62463b01a6d5fab5b8eb8fbf4a03a8ace149f0a5747bf9b494b351557ad709d2";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/mountain-peak-5120x2880-24313.jpg";
+        sha256 = "03ea0c3867dae30f5f161912163bc311d5e156b2935e071edeed2f48392f7d12";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/nayam-gP03rRKJBps-unsplash.jpg";
+        sha256 = "db6829f4bca8a8bc610b522e5267fb46d16a244661d365bbc35192d10bee58cb";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/os-x-mavericks-tide-3840x2160-24077.jpg";
+        sha256 = "a5980055931145404069358cf871e90e47e252b365542a122182cab68a4d747a";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/os-x-mountain-lion-3840x2160-24070.jpg";
+        sha256 = "c10d4c5bdbafd2ec62fbc7dcaf3b5be765d6d5df19b5fc2e5bf8b067a367ad11";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/richard-horvath-_nWaeTF6qo0-unsplash.jpg";
+        sha256 = "21b7d35591e1ea41efdd52e1b42f36a70c5ea1c252d1509cf4ad9f79602c1959";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/sheng-l-q2dUSl9S4Xg-unsplash.jpg";
+        sha256 = "c56662b3b84032c4e089651e26dc2750298996e29cb4ed4b02f6393569966666";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/silas-baisch-OCzvgBqCJKY-unsplash.jpg";
+        sha256 = "cfa5cc64241810abd296a5baa02a8f583db61527b39a93e57c01f58b9bd0ad3f";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/slovenia-hilltop-3840x2160-23639.jpg";
+        sha256 = "21c5eb09d7845bf86d62ed637baf5869d8be1ebcfd8c48c4a2ae90e2443e3a00";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/toan-chu-YKN_G9L9nMA-unsplash.jpg";
+        sha256 = "2afe2d2e10265e658a0b45f017510286830345588632d924eb14e29254b7f59d";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/tree_stones_light_1359768_3840x2400.jpg";
+        sha256 = "c74f03bba0fce6fd066a63626973c2a43ed9bca049815db9285239e7bf0ca478";
       };
     }
   ];
