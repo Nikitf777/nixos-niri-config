@@ -19,7 +19,6 @@
       ddcutil
 
       # Terminal
-      ghostty
       msedit
       nushell
       zellij
