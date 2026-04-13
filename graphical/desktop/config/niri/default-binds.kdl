@@ -34,7 +34,7 @@ binds {
     Super+Z hotkey-overlay-title="Consume/Expel Left" { consume-or-expel-window-left; }
     Print hotkey-overlay-title="Screenshot (Interactive)" { screenshot; }
     Super+Shift+Q hotkey-overlay-title="Quit Niri" { quit; }
-    Super+E hotkey-overlay-title="Open File Manager: Files" { spawn "nautilus"; }
+    Super+E hotkey-overlay-title="Open File Manager: Files" { spawn "nautilus" "-w"; }
     Super+T hotkey-overlay-title="Open Terminal: Ghostty" { spawn "ghostty"; }
     Scroll_Lock hotkey-overlay-title="Toggle Overview" { toggle-overview; }
     Super+H hotkey-overlay-title="Show Hotkey Overlay" { show-hotkey-overlay; }
