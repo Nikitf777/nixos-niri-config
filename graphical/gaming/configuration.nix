@@ -2,23 +2,26 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
-
 {
-  imports =
-    [
-      ../configuration.nix
-      ./boot.nix
-      ./environment.nix
-      ./programs.nix
-      ./services.nix
-      ./systemd.nix
-    ];
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
+{
+  imports = [
+    ../configuration.nix
+    ./boot.nix
+    ./environment.nix
+    ./programs.nix
+    ./services.nix
+    ./systemd.nix
+  ];
 
   users.users.steamuser = {
-      isNormalUser = true;
-      description = "";
-      extraGroups = [ "networkmanager" ];
-      shell = pkgs.bash;
-    };
+    isNormalUser = true;
+    description = "";
+    extraGroups = [ "networkmanager" ];
+    shell = pkgs.bash;
+  };
 }

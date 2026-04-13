@@ -1,17 +1,23 @@
-{ config, pkgs, inputs, ... }:
-
 {
-  imports =
-    [
-      /etc/nixos/hardware-configuration.nix
-      ./environment.nix
-    ];
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
+{
+  imports = [
+    /etc/nixos/hardware-configuration.nix
+    ./environment.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -35,9 +41,12 @@
   users.users.nikitf777 = {
     isNormalUser = true;
     description = "Nikita Samusev";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
-    #  thunderbird
+      #  thunderbird
     ];
   };
 

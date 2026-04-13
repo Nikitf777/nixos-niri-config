@@ -15,8 +15,8 @@
     };
 
     silentSDDM = {
-       url = "github:uiriansan/SilentSDDM";
-       inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:uiriansan/SilentSDDM";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     quickshell = {
@@ -30,45 +30,59 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, bore-scheduler-src, silentSDDM, quickshell, zen-browser }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      bore-scheduler-src,
+      silentSDDM,
+      quickshell,
+      zen-browser,
+    }@inputs:
     let
       system = "x86_64-linux";
-    in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      inherit system;
+    in
+    {
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        inherit system;
 
-      specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs; };
 
-      modules = [
-        ./configuration.nix
+        modules = [
+          ./configuration.nix
 
-        {
-          specialisation = {
-            desktop.configuration = {
-              imports = [
-                ./graphical/desktop/configuration.nix
-              ];
+          {
+            specialisation = {
+              desktop.configuration = {
+                imports = [
+                  ./graphical/desktop/configuration.nix
+                ];
+              };
+
+              gaming.configuration =
+                { config, pkgs, ... }:
+                {
+                  imports = [
+                    ./graphical/gaming/configuration.nix
+                  ];
+                };
+
+              server.configuration =
+                { config, pkgs, ... }:
+                {
+                  imports = [
+                    ./headless/server/configuration.nix
+                  ];
+                };
             };
+          }
+        ];
+      };
 
-            gaming.configuration = { config, pkgs, ... }: {
-              imports = [
-                ./graphical/gaming/configuration.nix
-              ];
-            };
-
-            server.configuration = { config, pkgs, ... }: {
-              imports = [
-                ./headless/server/configuration.nix
-              ];
-            };
-          };
-        }
-      ];
+      homeConfigurations.user = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+        modules = [ ./home.nix ];
+      };
     };
-
-    homeConfigurations.user = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      modules = [ ./home.nix ];
-    };
-  };
 }

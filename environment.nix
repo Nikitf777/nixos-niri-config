@@ -1,4 +1,9 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   environment = {
     shells = [
@@ -6,7 +11,7 @@
     ];
 
     sessionVariables = rec {
-      EDITOR  = "edit";
+      EDITOR = "edit";
     };
 
     systemPackages = with pkgs; [

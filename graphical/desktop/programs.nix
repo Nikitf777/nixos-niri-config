@@ -1,6 +1,11 @@
-{ config, pkgs, inputs, ... }:
 {
-  imports = [inputs.silentSDDM.nixosModules.default];
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
+{
+  imports = [ inputs.silentSDDM.nixosModules.default ];
   programs = {
     # System
     gnupg.agent = {
@@ -8,8 +13,8 @@
       pinentryPackage = pkgs.pinentry-gnome3;
     };
     silentSDDM = {
-        enable = true;
-        theme = "rei";
+      enable = true;
+      theme = "rei";
     };
 
     # Desktop
@@ -18,8 +23,8 @@
       enable = true;
 
       systemd = {
-        enable = true;             # Systemd service for auto-start
-        restartIfChanged = true;   # Auto-restart dms.service when dms-shell changes
+        enable = true; # Systemd service for auto-start
+        restartIfChanged = true; # Auto-restart dms.service when dms-shell changes
       };
 
       quickshell.package = inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell;
