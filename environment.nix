@@ -24,6 +24,7 @@
       ddcutil
 
       # Terminal
+      tree
       msedit
       nushell
       zellij
