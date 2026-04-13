@@ -37,6 +37,7 @@
       fastfetch
 
       # Development
+      nixd
       nil
       git
       lazygit
