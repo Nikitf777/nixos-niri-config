@@ -7,7 +7,7 @@
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
-  "dockTransparency": 0.9,
+  "dockTransparency": 0.8,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
   "controlCenterTileColorMode": "primary",
@@ -123,7 +123,7 @@
   "showWorkspaceApps": true,
   "workspaceDragReorder": true,
   "maxWorkspaceIcons": 10,
-  "workspaceAppIconSizeOffset": 10,
+  "workspaceAppIconSizeOffset": 4,
   "groupWorkspaceApps": true,
   "workspaceFollowFocus": false,
   "showOccupiedWorkspacesOnly": false,
@@ -422,11 +422,11 @@
       "showOnLastDisplay": true,
       "leftWidgets": [
         {
-          "id": "workspaceSwitcher",
+          "id": "launcherButton",
           "enabled": true
         },
         {
-          "id": "launcherButton",
+          "id": "workspaceSwitcher",
           "enabled": true
         },
         {
@@ -449,9 +449,9 @@
         "controlCenterButton"
       ],
       "spacing": 4,
-      "innerPadding": 1,
+      "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 1,
+      "transparency": 0.8,
       "widgetTransparency": 1,
       "squareCorners": false,
       "noBackground": false,
@@ -471,7 +471,7 @@
       "widgetOutlineOpacity": 1,
       "widgetOutlineThickness": 1,
       "fontScale": 1.15,
-      "iconScale": 1.1,
+      "iconScale": 1.15,
       "autoHide": false,
       "autoHideDelay": 200,
       "showOnWindowsOpen": true,
