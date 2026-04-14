@@ -7,6 +7,12 @@ run = 'nixos-rebuild build --impure --flake .#nixos'
 [tasks.b]
 run = 'mise build'
 
+[tasks.switch-home]
+run = 'home-manager switch --flake ./#user'
+
+[tasks.hs] # sh is already taken
+run = 'mise switch-home'
+
 [tasks.test-desktop]
 run = './rebuild.nu test desktop'
 
