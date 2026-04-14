@@ -981,12 +981,6 @@ let
     }
     {
       src = pkgs.fetchurl {
-        url = "https://4kwallpapers.com/images/wallpapers/dark-souls-6084x6968-18757.jpg";
-        sha256 = "cf798783820d8ae23df80e93a82e8fcad323e3005a5d6cae73654b087634a4e2";
-      };
-    }
-    {
-      src = pkgs.fetchurl {
         url = "https://4kwallpapers.com/images/wallpapers/dark-souls-knight-3840x2160-18742.jpeg";
         sha256 = "4c1863e9d903fc46b9384f6a9306cde2fd584646cff3ae130698d3ff80d76323";
       };
