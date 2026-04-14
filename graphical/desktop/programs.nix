@@ -8,10 +8,6 @@
   imports = [ inputs.silentSDDM.nixosModules.default ];
   programs = {
     # System
-    gnupg.agent = {
-      enable = true;
-      pinentryPackage = pkgs.pinentry-gnome3;
-    };
     silentSDDM = {
       enable = true;
       theme = "rei";
@@ -34,9 +30,5 @@
 
     # Gaming
     steam.enable = true;
-
-    # Terminal
-    zsh.enable = true;
-    fish.enable = true;
   };
 }

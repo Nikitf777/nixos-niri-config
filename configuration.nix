@@ -7,6 +7,7 @@
 {
   imports = [
     /etc/nixos/hardware-configuration.nix
+    ./programs.nix
     ./environment.nix
   ];
 
