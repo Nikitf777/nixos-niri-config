@@ -14,6 +14,7 @@
     ./environment.nix
     ./programs.nix
     ./services.nix
+    ./systemd.nix
     ./wallpapers.nix
   ];
 
