@@ -345,12 +345,6 @@ let
     }
     {
       src = pkgs.fetchurl {
-        url = "https://4kwallpapers.com/images/wallpapers/surreal-classic-4500x6000-10672.jpg";
-        sha256 = "72ab2466bcf757cc20a8b7ea5e6add9d8b7d84772ddbcefb9b96d9fd6c9b4edc";
-      };
-    }
-    {
-      src = pkgs.fetchurl {
         url = "https://4kwallpapers.com/images/wallpapers/moon-night-silhouette-yellow-dream-3512x2193-77.jpg";
         sha256 = "44ebdb5503616294b2c8f70663d046c329df27ac39e06ae7d347f8664d343dd2";
       };
