@@ -10,7 +10,7 @@
       pkgs.nushell
     ];
 
-    sessionVariables = rec {
+    sessionVariables = {
       EDITOR = "edit";
     };
 
