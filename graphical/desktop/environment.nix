@@ -62,6 +62,7 @@ in
         # General-purpose GUI apps
         nautilus
         file-roller
+        wifi-qr
         bazaar
         distroshelf
         mission-center
