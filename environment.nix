@@ -40,6 +40,7 @@
       fd
       television
       wget
+      dig
       fastfetch
 
       # Development
