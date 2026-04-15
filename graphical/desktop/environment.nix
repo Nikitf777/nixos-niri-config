@@ -61,6 +61,7 @@ in
 
         # General-purpose GUI apps
         nautilus
+        file-roller
         bazaar
         distroshelf
         mission-center
