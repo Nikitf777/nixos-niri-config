@@ -9,6 +9,9 @@
     inputs.silentSDDM.nixosModules.default
     inputs.dms.nixosModules.dank-material-shell
   ];
+
+  nixpkgs.overlays = [ inputs.niri.overlays.niri ];
+
   programs = {
     # System
     silentSDDM = {
@@ -17,7 +20,10 @@
     };
 
     # Desktop
-    niri.enable = true;
+    niri = {
+      enable = true;
+      package = pkgs.niri-unstable;
+    };
     dank-material-shell = {
       enable = true;
 
