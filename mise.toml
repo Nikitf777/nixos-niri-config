@@ -51,21 +51,3 @@ run = 'mise switch-server'
 
 [tasks.boot]
 run = 'sudo -A nixos-rebuild boot --impure --flake .#nixos'
-
-[tasks.boot-desktop]
-run = './rebuild.nu boot desktop'
-
-[tasks.boot-gaming]
-run = './rebuild.nu boot gaming'
-
-[tasks.boot-server]
-run = './rebuild.nu boot server'
-
-[tasks.bd]
-run = 'mise boot-desktop'
-
-[tasks.bg]
-run = 'mise boot-gaming'
-
-[tasks.bs]
-run = 'mise boot-server'
