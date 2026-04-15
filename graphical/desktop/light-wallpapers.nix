@@ -445,6 +445,12 @@ let
         sha256 = "c256359e87b676bd838005f5a1820694aad25f1342db3d2a4f9dfd2b8427a255";
       };
     }
+    {
+      src = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/ilyamiro/shell-wallpapers/refs/heads/master/images/ken-cheung-KonWFWUaAuk-unsplash.jpg";
+        sha256 = "be87b042edd071de87842b3b4b4d6b42fe10e70c3bfdade1ddd5d19c01664623";
+      };
+    }
   ];
 
   wallpapersPackage = pkgs.runCommand "system-wallpapers" { } ''
