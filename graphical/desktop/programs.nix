@@ -5,7 +5,10 @@
   ...
 }:
 {
-  imports = [ inputs.silentSDDM.nixosModules.default ];
+  imports = [
+    inputs.silentSDDM.nixosModules.default
+    inputs.dms.nixosModules.dank-material-shell
+  ];
   programs = {
     # System
     silentSDDM = {
@@ -15,7 +18,7 @@
 
     # Desktop
     niri.enable = true;
-    dms-shell = {
+    dank-material-shell = {
       enable = true;
 
       systemd = {
