@@ -19,5 +19,5 @@
     ./light-wallpapers.nix
   ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 }
