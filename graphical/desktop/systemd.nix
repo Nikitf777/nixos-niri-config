@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 {
+  systemd.services.AmneziaVPN.enable = true;
   systemd.user.services.prepare-niri-config = {
     description = "";
     before = [ "graphical-session.target" ];

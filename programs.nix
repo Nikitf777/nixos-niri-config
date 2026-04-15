@@ -12,6 +12,7 @@
       enable = true;
       pinentryPackage = pkgs.pinentry-gnome3;
     };
+    amnezia-vpn.enable = true;
 
     # Terminal
     zsh.enable = true;
