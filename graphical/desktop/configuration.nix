@@ -15,7 +15,8 @@
     ./programs.nix
     ./services.nix
     ./systemd.nix
-    ./wallpapers.nix
+    ./dark-wallpapers.nix
+    ./light-wallpapers.nix
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
