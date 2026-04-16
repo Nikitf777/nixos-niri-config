@@ -38,6 +38,12 @@
 
   users.defaultUserShell = pkgs.nushell;
 
+  users.groups.steam-games = { };
+
+  systemd.tmpfiles.rules = [
+    "d /home/SteamLibrary 0775 root steam-games -"
+  ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nikitf777 = {
     isNormalUser = true;
@@ -45,6 +51,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "steam-games"
     ];
     packages = with pkgs; [
       #  thunderbird
