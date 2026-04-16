@@ -22,6 +22,8 @@
       pinentry-all
       file
       ddcutil
+      pciutils
+      usbutils
 
       # Terminal
       tree
