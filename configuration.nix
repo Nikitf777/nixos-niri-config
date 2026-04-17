@@ -51,7 +51,10 @@
 
     serviceConfig = {
       Type = "oneshot";
-      ExecStart = pkgs.writeShellScript "set-steam-library-group" "chgrp -R steam-games /home/SteamLibrary/*";
+      ExecStart = pkgs.writeShellScript "set-steam-library-group" ''
+        chown -R :steam-games /home/SteamLibrary
+        chmod -R g+rwX /home/SteamLibrary
+      '';
     };
   };
 
