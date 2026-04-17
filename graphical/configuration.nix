@@ -10,6 +10,7 @@
 }:
 {
   imports = [
+    ./environment.nix
     ./services.nix
   ];
   security.rtkit.enable = true;
