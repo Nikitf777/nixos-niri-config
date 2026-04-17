@@ -7,15 +7,10 @@
 
     serviceConfig = {
       Type = "simple";
-      Environment = [
-        "MANGOHUD=1"
-        "MANGOHUD_CONFIG=cpu_temp,gpu_temp,ram,vram"
-      ];
       ExecStart = pkgs.writeShellScript "gamescope-session" ''
         exec ${pkgs.gamescope}/bin/gamescope \
           --adaptive-sync \
           --hdr-enabled \
-          --mangoapp \
           --rt \
           --steam \
           -- ${pkgs.steam}/bin/steam \
