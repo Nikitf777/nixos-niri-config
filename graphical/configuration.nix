@@ -11,6 +11,7 @@
 {
   imports = [
     ./environment.nix
+    ./programs.nix
     ./services.nix
   ];
   security.rtkit.enable = true;
