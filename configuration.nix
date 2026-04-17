@@ -44,6 +44,17 @@
     "d /home/SteamLibrary 0775 root steam-games -"
   ];
 
+  systemd.services.set-steam-library-group = {
+    description = "";
+    before = [ "graphical-session.target" ];
+    wantedBy = [ "default.target" ];
+
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = pkgs.writeShellScript "set-steam-library-group" "chgrp -R steam-games /home/SteamLibrary/*";
+    };
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nikitf777 = {
     isNormalUser = true;
