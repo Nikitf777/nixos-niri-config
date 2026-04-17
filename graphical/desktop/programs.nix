@@ -36,8 +36,5 @@
     };
     gpu-screen-recorder.enable = true;
     obs-studio.enable = true;
-
-    # Gaming
-    steam.enable = true;
   };
 }
