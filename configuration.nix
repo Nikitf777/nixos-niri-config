@@ -58,7 +58,15 @@
     };
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.steamuser = {
+    isNormalUser = true;
+    description = "";
+    extraGroups = [
+      "networkmanager"
+      "steam-games"
+    ];
+  };
+
   users.users.nikitf777 = {
     isNormalUser = true;
     description = "Nikita Samusev";

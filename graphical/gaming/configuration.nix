@@ -17,14 +17,4 @@
     ./services.nix
     ./systemd.nix
   ];
-
-  users.users.steamuser = {
-    isNormalUser = true;
-    description = "";
-    extraGroups = [
-      "networkmanager"
-      "steam-games"
-    ];
-    shell = pkgs.bash;
-  };
 }
