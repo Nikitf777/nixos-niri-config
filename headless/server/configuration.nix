@@ -14,5 +14,5 @@
   ];
 
   # Use latest LTS hardened kernel.
-  boot.kernelPackages = pkgs.linuxPackages_6_12_hardened;
+  boot.kernelPackages = pkgs.linuxPackages_hardened;
 }
