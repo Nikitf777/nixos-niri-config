@@ -24,6 +24,7 @@
       ddcutil
       pciutils
       usbutils
+      inotify-tools
 
       # Terminal
       tree
