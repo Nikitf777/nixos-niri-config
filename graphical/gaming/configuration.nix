@@ -11,7 +11,6 @@
 {
   imports = [
     ../configuration.nix
-    ./boot.nix
     ./services.nix
     ./systemd.nix
   ];

@@ -15,4 +15,6 @@
     ./services.nix
   ];
   security.rtkit.enable = true;
+  
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 }

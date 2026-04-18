@@ -4,19 +4,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    niri = {
-      url = "github:sodiboo/niri-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    bore-scheduler-src = {
-      url = "github:firelzrd/bore-scheduler";
-      flake = false;
     };
 
     silentSDDM = {
@@ -44,9 +35,8 @@
     {
       self,
       nixpkgs,
+      nixos-hardware,
       home-manager,
-      niri,
-      bore-scheduler-src,
       silentSDDM,
       quickshell,
       dms,

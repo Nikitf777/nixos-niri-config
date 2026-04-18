@@ -12,7 +12,4 @@
   imports = [
     ../configuration.nix
   ];
-
-  # Use latest LTS hardened kernel.
-  boot.kernelPackages = pkgs.linuxPackages_hardened;
 }
