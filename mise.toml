@@ -31,6 +31,9 @@ run = 'mise test-gaming'
 [tasks.ts]
 run = 'mise test-server'
 
+[tasks.switch]
+run = 'sudo -A nixos-rebuild switch --impure --flake .#nixos'
+
 [tasks.switch-desktop]
 run = './rebuild.nu switch desktop'
 
