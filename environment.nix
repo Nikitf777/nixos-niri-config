@@ -25,6 +25,7 @@
       pciutils
       usbutils
       inotify-tools
+      keyd
 
       # Terminal
       tree
