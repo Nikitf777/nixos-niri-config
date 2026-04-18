@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
+    nixos-hardware.url = "github:Nikitf777/nixos-hardware/16-e0105nw";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -44,42 +45,47 @@
     }@inputs:
     let
       system = "x86_64-linux";
-    in
-    {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        inherit system;
+      genericModules = [
+        ./configuration.nix
 
-        specialArgs = { inherit inputs; };
+        {
+          specialisation = {
+            desktop.configuration = {
+              imports = [
+                ./graphical/desktop/configuration.nix
+              ];
+            };
 
-        modules = [
-          ./configuration.nix
-
-          {
-            specialisation = {
-              desktop.configuration = {
+            gaming.configuration =
+              { config, pkgs, ... }:
+              {
                 imports = [
-                  ./graphical/desktop/configuration.nix
+                  ./graphical/gaming/configuration.nix
                 ];
               };
 
-              gaming.configuration =
-                { config, pkgs, ... }:
-                {
-                  imports = [
-                    ./graphical/gaming/configuration.nix
-                  ];
-                };
+            server.configuration =
+              { config, pkgs, ... }:
+              {
+                imports = [
+                  ./headless/server/configuration.nix
+                ];
+              };
+          };
+        }
+      ];
+    in
+    {
+      nixosConfigurations.generic = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = { inherit inputs; };
+        modules = genericModules;
+      };
 
-              server.configuration =
-                { config, pkgs, ... }:
-                {
-                  imports = [
-                    ./headless/server/configuration.nix
-                  ];
-                };
-            };
-          }
-        ];
+      nixosConfigurations.hp-victus-16-e0105nw = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = { inherit inputs; };
+        modules = genericModules ++ [ nixos-hardware.nixosModules.hp-victus-16-e0105nw ];
       };
 
       homeConfigurations.user = home-manager.lib.homeManagerConfiguration {
