@@ -4,6 +4,11 @@ let
 in
 {
   environment = {
+
+    sessionVariables = {
+      PROTON_USE_WAYLAND = "1";
+    };
+
     systemPackages =
       with pkgs;
       [
