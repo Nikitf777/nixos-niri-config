@@ -30,6 +30,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  virtualisation.docker.enable = true;
+  virtualisation.podman.enable = true;
+
   # Set your time zone.
   time.timeZone = "Europe/Minsk";
 

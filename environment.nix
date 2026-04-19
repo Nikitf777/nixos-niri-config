@@ -73,8 +73,6 @@
       jdk25
       go
       zig
-      docker
-      podman
       mise
       devbox
       sqlite
