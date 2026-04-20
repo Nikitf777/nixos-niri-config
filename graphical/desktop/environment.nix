@@ -44,6 +44,8 @@ in
     ];
 
     etc."niri/config.kdl".source = ./config/niri/global.kdl;
+    etc."niri/window-close-animation.kdl".source = ./config/niri/window-close-animation.kdl;
+    etc."niri/window-open-animation.kdl".source = ./config/niri/window-open-animation.kdl;
 
     sessionVariables = {
       EDITOR = "edit";
