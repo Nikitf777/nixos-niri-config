@@ -1,8 +1,9 @@
 animations {
     window-close {
+        curve "cubic-bezier" 0.39 -0.24 1 0.12
         custom-shader r"
             vec4 close_color(vec3 coords_geo, vec3 size_geo) {
-                float progress = niri_clamped_progress;
+                float progress = niri_progress;
                 float max_angle = radians(90.0);
                 float angle = progress * max_angle;
                 float sin_theta = sin(angle);
