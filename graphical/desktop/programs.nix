@@ -37,6 +37,8 @@
       terminal = "ghostty";
     };
 
+    thunderbird.enable = true;
+
     gpu-screen-recorder.enable = true;
     obs-studio.enable = true;
   };
