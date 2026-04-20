@@ -18,7 +18,10 @@
     };
 
     # Desktop
-    niri.enable = true;
+    niri = {
+      enable = true;
+      useNautilus = true;
+    };
     dank-material-shell = {
       enable = true;
 
@@ -29,6 +32,11 @@
 
       quickshell.package = inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell;
     };
+    nautilus-open-any-terminal = {
+      enable = true;
+      terminal = "ghostty";
+    };
+
     gpu-screen-recorder.enable = true;
     obs-studio.enable = true;
   };

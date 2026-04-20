@@ -64,8 +64,6 @@ in
         adwaita-icon-theme
         zenity
         ghostty
-        gnome-terminal
-        gnome-console
 
         # General-purpose GUI apps
         nautilus
