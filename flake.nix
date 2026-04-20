@@ -30,6 +30,8 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
   outputs =
@@ -42,10 +44,12 @@
       quickshell,
       dms,
       zen-browser,
+      nix-flatpak,
     }@inputs:
     let
       system = "x86_64-linux";
       genericModules = [
+        nix-flatpak.nixosModules.nix-flatpak
         ./configuration.nix
 
         {
