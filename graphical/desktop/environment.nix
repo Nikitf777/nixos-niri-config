@@ -12,10 +12,10 @@ let
 
   helium = pkgs.appimageTools.wrapType2 {
     pname = "helium";
-    version = "0.10.9.1";
+    version = "0.11.3.2";
     src = pkgs.fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.10.9.1/helium-0.10.9.1-x86_64.AppImage";
-      sha256 = "14c3b8801db33a38609a37c4fd3d177436f434c0cab1016ecf2fceae0d620f8f";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.11.3.2/helium-0.11.3.2-x86_64.AppImage";
+      sha256 = "0w1q106i1cvgi0dxmw69dywv0xi6m3kjy4gxlnhmsrbn1lm741z6";
     };
     extraInstallCommands = ''
             # Install the icon
