@@ -54,6 +54,8 @@ in
       [
         # Desktoop
         xwayland-satellite
+        adwaita-fonts
+        adwaita-icon-theme
         zenity
         ghostty
         gnome-terminal
