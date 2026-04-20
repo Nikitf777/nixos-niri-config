@@ -45,7 +45,7 @@ in
 
     etc."niri/config.kdl".source = ./config/niri/global.kdl;
 
-    sessionVariables = rec {
+    sessionVariables = {
       EDITOR = "edit";
     };
 
