@@ -13,6 +13,7 @@ in
       with pkgs;
       [
         mangohud
+        proton-vpn
       ]
       ++ [
         gamescope
