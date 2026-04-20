@@ -67,6 +67,8 @@ in
 
         # General-purpose GUI apps
         nautilus
+        nautilus-python
+        code-nautilus
         file-roller
         wifi-qr
         bazaar
