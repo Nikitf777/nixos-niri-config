@@ -49,6 +49,10 @@ in
       EDITOR = "edit";
     };
 
+    pathsToLink = [
+      "/share"
+    ];
+
     systemPackages =
       with pkgs;
       [

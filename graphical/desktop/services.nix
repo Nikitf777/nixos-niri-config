@@ -3,7 +3,6 @@
   # Desktop
   services.displayManager.sddm.enable = true;
   services.displayManager.sessionPackages = with pkgs; [ niri ];
-  services.desktopManager.gnome.enable = true;
   # Workaround for niri not supporting using the Super key as a standalone bind (and doesn't seem to support the F keys above F12 unfortunately)
   services.keyd = {
     enable = true;
