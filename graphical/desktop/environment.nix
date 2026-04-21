@@ -81,6 +81,13 @@ in
         gnome-text-editor
         gnome-disk-utility
         papers
+        gnome-font-viewer
+        gnome-calendar
+        gnome-calculator
+        decibels
+        baobab
+        loupe
+        snapshot
 
         # Gaming
         heroic
