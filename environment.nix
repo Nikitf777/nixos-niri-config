@@ -46,6 +46,7 @@
       wget
       dig
       fastfetch
+      imagemagick
 
       # Development
       nixd
