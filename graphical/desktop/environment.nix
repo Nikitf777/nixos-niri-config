@@ -88,6 +88,7 @@ in
         baobab
         loupe
         snapshot
+        pinta
 
         # Gaming
         heroic
