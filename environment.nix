@@ -47,6 +47,9 @@
       dig
       fastfetch
       imagemagick
+      unzip
+      gz-utils
+      xz
 
       # Development
       nixd
