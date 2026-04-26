@@ -18,4 +18,8 @@
     ./dark-wallpapers.nix
     ./light-wallpapers.nix
   ];
+
+  zramSwap = {
+    enable = true;
+  };
 }
