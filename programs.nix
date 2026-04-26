@@ -13,6 +13,10 @@
       pinentryPackage = pkgs.pinentry-gnome3;
     };
     amnezia-vpn.enable = true;
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
 
     # Terminal
     zsh.enable = true;
