@@ -1,14 +1,17 @@
 { config, pkgs, ... }:
 {
-  systemd.services.AmneziaVPN.enable = true;
-  systemd.user.services.prepare-niri-config = {
-    description = "";
-    before = [ "graphical-session.target" ];
-    wantedBy = [ "default.target" ];
+  systemd = {
+    oomd.enable = true;
+    services.AmneziaVPN.enable = true;
+    user.services.prepare-niri-config = {
+      description = "";
+      before = [ "graphical-session.target" ];
+      wantedBy = [ "default.target" ];
 
-    serviceConfig = {
-      Type = "oneshot";
-      ExecStart = pkgs.writeShellScript "prepare-niri-config" "touch ~/.config/niri/input.kdl";
+      serviceConfig = {
+        Type = "oneshot";
+        ExecStart = pkgs.writeShellScript "prepare-niri-config" "touch ~/.config/niri/input.kdl";
+      };
     };
   };
 }
