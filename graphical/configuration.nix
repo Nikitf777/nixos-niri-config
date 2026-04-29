@@ -15,6 +15,13 @@
     ./services.nix
   ];
   security.rtkit.enable = true;
-  
+
   boot.kernelPackages = pkgs.linuxPackages_zen;
+
+  hardware.bluetooth = {
+    enable = true;
+    settings.General = {
+      Experimental = true;
+    };
+  };
 }
