@@ -55,6 +55,9 @@
       nixd
       nil
       git
+      github-cli
+      glab
+      gh-dash
       lazygit
       jujutsu
       lazyjj
