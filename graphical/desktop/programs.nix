@@ -36,6 +36,8 @@
       terminal = "ghostty";
     };
 
+    kdeconnect.enable = true;
+
     thunderbird.enable = true;
 
     gpu-screen-recorder.enable = true;
