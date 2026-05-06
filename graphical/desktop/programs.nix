@@ -7,7 +7,6 @@
 {
   imports = [
     inputs.silentSDDM.nixosModules.default
-    inputs.dms.nixosModules.dank-material-shell
   ];
 
   programs = {
@@ -22,7 +21,7 @@
       enable = true;
       useNautilus = true;
     };
-    dank-material-shell = {
+    dms-shell = {
       enable = true;
 
       systemd = {
