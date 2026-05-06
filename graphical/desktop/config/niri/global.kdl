@@ -353,3 +353,28 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
+
+include optional=true "~/.config/niri/dms/alttab.kdl"
+include optional=true "~/.config/niri/dms/binds.kdl"
+include optional=true "~/.config/niri/dms/colors.kdl"
+include optional=true "~/.config/niri/dms/cursor.kdl"
+include optional=true "~/.config/niri/dms/layout.kdl"
+include optional=true "~/.config/niri/dms/outputs.kdl"
+include optional=true "~/.config/niri/dms/windowrules.kdl"
+include optional=true "~/.config/niri/dms/wpblur.kdl"
+
+include optional=true "~/.config/niri/input.kdl"
+
+window-rule {
+    tiled-state false
+
+    background-effect {
+        xray false
+    }
+}
+
+layer-rule {
+    background-effect {
+        xray false
+    }
+}
