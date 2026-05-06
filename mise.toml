@@ -2,7 +2,7 @@
 SUDO_ASKPASS = './askpass.nu'
 
 [tasks.build]
-run = './rebuild build'
+run = './rebuild.nu build'
 
 [tasks.b]
 run = 'mise build'
@@ -32,7 +32,7 @@ run = 'mise test-gaming'
 run = 'mise test-server'
 
 [tasks.switch]
-run = 'sudo -A ./rebuild.nu switch'
+run = 'sudo -AE ./rebuild.nu switch'
 
 [tasks.switch-desktop]
 run = './rebuild-spec.nu switch desktop'
@@ -53,4 +53,4 @@ run = 'mise switch-gaming'
 run = 'mise switch-server'
 
 [tasks.boot]
-run = 'sudo -A ./rebuild boot'
+run = 'sudo -AE ./rebuild.nu boot'
