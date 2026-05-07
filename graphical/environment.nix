@@ -13,7 +13,9 @@ in
       with pkgs;
       [
         mangohud
+        mangojuice
         gpu-screen-recorder-gtk
+        gpu-viewer
         proton-vpn
       ]
       ++ [
