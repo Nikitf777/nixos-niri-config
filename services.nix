@@ -4,5 +4,7 @@
     zerotierone = {
       enable = true;
     };
+
+    gvfs.enable = true;
   };
 }

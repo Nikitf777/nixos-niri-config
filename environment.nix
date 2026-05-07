@@ -26,6 +26,7 @@
       usbutils
       inotify-tools
       keyd
+      jmtpfs
 
       # Terminal
       tree
