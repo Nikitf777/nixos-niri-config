@@ -14,6 +14,7 @@ in
       [
         mangohud
         mangojuice
+        goverlay
         gpu-screen-recorder-gtk
         gpu-viewer
         proton-vpn
