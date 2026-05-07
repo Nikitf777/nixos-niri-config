@@ -43,6 +43,7 @@
       bat
       ripgrep
       btop
+      lm_sensors
       nvtopPackages.full
       wl-clipboard
       jq
