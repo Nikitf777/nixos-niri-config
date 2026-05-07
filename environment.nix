@@ -63,6 +63,8 @@
       lazyjj
       jjui
       gg-jj
+      gnumake
+      ninja
       gcc
       clang
       meson
