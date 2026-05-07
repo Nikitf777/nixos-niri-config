@@ -59,6 +59,7 @@
       gz-utils
       xz
       ttyper
+      cmatrix
 
       # Development
       nixd
