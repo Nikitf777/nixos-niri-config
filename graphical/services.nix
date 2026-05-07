@@ -10,5 +10,7 @@
       pulse.enable = true;
     };
     blueman.enable = true;
+
+    lact.enable = true;
   };
 }
