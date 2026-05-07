@@ -17,5 +17,7 @@
         proton-ge-bin
       ];
     };
+
+    gpu-screen-recorder.enable = true;
   };
 }
