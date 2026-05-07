@@ -45,6 +45,7 @@
       television
       wget
       dig
+      inetutils
       fastfetch
       imagemagick
       unzip
