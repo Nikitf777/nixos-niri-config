@@ -32,6 +32,7 @@
       tree
       msedit
       nushell
+      nufmt
       zellij
       tmux
       neovim
