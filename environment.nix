@@ -48,6 +48,7 @@
       dig
       inetutils
       fastfetch
+      ffmpeg
       imagemagick
       unzip
       gz-utils
