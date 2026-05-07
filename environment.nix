@@ -32,6 +32,10 @@
       tree
       msedit
       nushell
+      nushellPlugins.gstat
+      nushellPlugins.query
+      nushellPlugins.bson
+      nushellPlugins.highlight
       nufmt
       zellij
       tmux
