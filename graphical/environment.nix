@@ -13,6 +13,7 @@ in
       with pkgs;
       [
         mangohud
+        gpu-screen-recorder-gtk
         proton-vpn
       ]
       ++ [
