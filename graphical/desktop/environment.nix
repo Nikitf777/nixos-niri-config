@@ -14,8 +14,8 @@ let
     pname = "helium";
     version = "0.11.5.1";
     src = pkgs.fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.11.5.1/helium-0.11.5.1-x86_64.AppImage";
-      sha256 = "362ec867d50169fafeb2cd017106912aa9a5989238215d6344027c8e17287658";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.12.1.1/helium-0.12.1.1-x86_64.AppImage";
+      sha256 = "f9413e26a42dc5b039b333ef02885aa579444b6d5504e74db15e848f575145fb";
     };
     extraInstallCommands = ''
             # Install the icon
