@@ -631,6 +631,36 @@ let
         sha256 = "60d59ddca947b8d62bb7025781000bb2bcfdf482f97a7bad9239d0e72c6c35d3";
       };
     }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/sakura-aesthetic-3840x2160-15408.jpg";
+        sha256 = "62cb7762b009578eac66d61f4ce5d3694f660e9d8c0348f8db771aecc2aa51b1";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/blue-flower-macro-vivid-close-up-dew-drops-droplets-3840x2560-4182.jpg";
+        sha256 = "3ab1d17309cd84c64788521e785ab169d76195b957b1a8173934d9a8a05538f1";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/macos-surreal-digital-composition-macos-catalina-macos-high-5120x2880-1475.jpg";
+        sha256 = "82f848df95345e37cf0365252dc66b1ac6fe5cfc59527642ec5d14ce3e2501cf";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/flowing-fabric-3840x3840-26286.jpg";
+        sha256 = "d6369d448533c10afe5aa5c6147c1fcb8ebfd429ac16d72a6e8d0ad433f5a3e0";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/nissan-z-heritage-5120x2880-26284.jpg";
+        sha256 = "b540f66f4decb33398600b1a0ed16948b50830f9d7fa623d337ae7a9dc9f670e";
+      };
+    }
   ];
 
   wallpapersPackage = pkgs.runCommand "system-wallpapers" { } ''

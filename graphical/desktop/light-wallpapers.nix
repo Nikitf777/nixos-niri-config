@@ -451,6 +451,126 @@ let
         sha256 = "be87b042edd071de87842b3b4b4d6b42fe10e70c3bfdade1ddd5d19c01664623";
       };
     }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/chrysanthemum-7680x4320-26230.jpg";
+        sha256 = "679306c1bf5ba870c8a84f9fcabce924ef3b8ba0e6c83224ed4c06be05614362";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/dahlia-flowers-colorful-bloom-pink-orange-vibrant-aesthetic-4592x2584-1145.jpg";
+        sha256 = "b8fe376b020347c042d138a833e6b0adbbac28d6e3b5426b40dd49ce10ede364";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/gerbera-daisy-yellow-flower-pink-orange-closeup-macro-5725x3911-3515.jpg";
+        sha256 = "e9980ae323b779d49c6d57a9cdcd265a6303116d3303b60188491dd07f605559";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/gerbera-daisy-daisy-flower-white-flower-white-background-5k-6016x4016-1326.jpg";
+        sha256 = "89af70c8a7ec07abcaa180b9897b8354ba7c4b5d0bb387b3b0646b20ba84cef9";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/chrysanthemum-7680x4320-26234.jpg";
+        sha256 = "59551c8e1bc171b8012ff0dda836ec6d12853f527ca78004eeae334d07d0760c";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/purple-flowers-flower-garden-blossom-bloom-spring-bokeh-6000x4000-2676.jpg";
+        sha256 = "f41189d6f5a4cd391caf56afd88ab902f4f61df1eca015f1337f4f9653a3d708";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/magnolia-flowers-purple-flowers-plant-branches-spring-4928x3280-1222.jpg";
+        sha256 = "627ef74f942544a58d48866b7dea1875d2509da9c5c7ada236802c41b7f56b8f";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/magnolia-flowers-blossom-pink-background-pink-flowers-5000x3200-2050.jpg";
+        sha256 = "398b0887fe6edb2abcef9b1a4674159bd90a012e070c9fd672ef2beae5fc8f38";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/magnolia-flowers-blossom-pink-nature-beautiful-spring-5k-6000x4000-2075.jpg";
+        sha256 = "523d540bfad45cfc970bfa972e4b74b025550cc4726d5abb235770b9ebb77afd";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/colorful-floral-5120x2880-25835.jpg";
+        sha256 = "ffedbce6d15114963ecd0ee1e16c5f0b4e6631d04ffdf43d07055d801b4dc53d";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/dandelion-flower-5120x2880-26268.jpg";
+        sha256 = "a46862542a78df8c7955d8d42f13dd0767113a5e33d756a29f1b58fbea5cd053";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/itaimbezinho-canyon-6000x3375-10320.jpg";
+        sha256 = "009f5cf063efe69d233627aa7e34f8deb76d12a032ba34569ac771ea2983662a";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/the-wave-arizona-5120x2880-24375.jpg";
+        sha256 = "24d34b6de789e8f8844e1fa6457f3d91674c623f4c7a89dda7e239fb9ef399d7";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/pink-aesthetic-5120x2880-25841.jpg";
+        sha256 = "d15f928b9e97170665cbc660a4bc2a7a5290f0deaa46812f9e0e01e14eb3c6ea";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/surreal-atmosphere-3840x2160-14474.jpg";
+        sha256 = "2fceb92f754a3286eecb8e1589fb8ed8c5fc65f093583bcc931418b98276dd46";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/tropical-island-5120x2880-14412.jpg";
+        sha256 = "accf52cd63b1240d445423711022d1f96b1ee5cf5b42e2a5a21e829cf080b0ac";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/island-sunny-day-daylight-blue-sky-house-lone-tree-5120x2880-7842.png";
+        sha256 = "985cbb332d87429b3fabebddb4dcfabf7935c5beccd07311600d87e23b94a8db";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/zakynthos-island-navagio-beach-shipwreck-beach-ionian-4000x3000-1196.jpg";
+        sha256 = "33f84aa9dc83e8c7f2c64e5ae99d8807f231d86dffec371d6714f3f1c00dd0ab";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/dandelion-flower-summer-sunset-fields-landscape-5k-5568x3712-8086.jpg";
+        sha256 = "2fd6cd618ce6b953d073b54f6c4a9d4efe67d877da2903630c8bff9475a33750";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/aston-martin-db12-s-5227x6999-26242.jpg";
+        sha256 = "f87867d3b913955ad044639ee514a414e63db87ef23afc93d5502157415998d8";
+      };
+    }
   ];
 
   wallpapersPackage = pkgs.runCommand "system-wallpapers" { } ''
