@@ -9,6 +9,7 @@
     /etc/nixos/hardware-configuration.nix
     ./programs.nix
     ./environment.nix
+    ./services.nix
   ];
 
   boot = {
