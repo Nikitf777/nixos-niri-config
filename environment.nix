@@ -58,6 +58,7 @@
       unzip
       gz-utils
       xz
+      ttyper
 
       # Development
       nixd
