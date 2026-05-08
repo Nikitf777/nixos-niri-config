@@ -51,6 +51,7 @@
       fd
       television
       wget
+      yt-dlp
       dig
       inetutils
       fastfetch
