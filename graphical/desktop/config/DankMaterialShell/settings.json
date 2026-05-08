@@ -138,7 +138,7 @@
   "workspaceScrolling": false,
   "showWorkspaceApps": true,
   "workspaceDragReorder": true,
-  "maxWorkspaceIcons": 10,
+  "maxWorkspaceIcons": 5,
   "workspaceAppIconSizeOffset": 4,
   "groupWorkspaceApps": true,
   "workspaceFollowFocus": false,
