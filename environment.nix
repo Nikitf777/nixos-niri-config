@@ -52,6 +52,7 @@
       television
       wget
       yt-dlp
+      parabolic
       dig
       inetutils
       fastfetch
