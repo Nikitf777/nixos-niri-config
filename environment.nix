@@ -101,6 +101,8 @@
       lazysql
       sqlit-tui
       qwen-code
+      podman-tui
+      pods
     ];
   };
 }
