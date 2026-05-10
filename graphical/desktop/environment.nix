@@ -59,6 +59,7 @@ in
       with pkgs;
       [
         # Desktoop
+        webkitgtk_4_1
         xwayland-satellite
         adwaita-fonts
         adwaita-icon-theme
