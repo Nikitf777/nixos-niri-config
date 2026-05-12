@@ -90,6 +90,7 @@ in
         loupe
         snapshot
         pinta
+        gradia
 
         # Gaming
         heroic
