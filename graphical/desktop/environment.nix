@@ -91,6 +91,7 @@ in
         snapshot
         pinta
         gradia
+        video-trimmer
 
         # Gaming
         heroic
