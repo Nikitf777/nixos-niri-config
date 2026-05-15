@@ -86,6 +86,7 @@
       rustup
       rust-analyzer
       python3
+      uv
       vala
       typescript
       nodejs_25
