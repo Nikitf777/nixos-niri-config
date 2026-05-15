@@ -16,6 +16,7 @@
 
     systemPackages = with pkgs; [
       # System
+      linuxHeaders
       home-manager
       distrobox
       gpg-tui
