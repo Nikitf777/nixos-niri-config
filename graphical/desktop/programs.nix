@@ -13,7 +13,7 @@
     # System
     silentSDDM = {
       enable = true;
-      theme = "rei";
+      theme = "default";
     };
 
     # Desktop
