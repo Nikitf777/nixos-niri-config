@@ -147,12 +147,6 @@ let
     }
     {
       src = pkgs.fetchurl {
-        url = "https://4kwallpapers.com/images/wallpapers/god-of-war-ragnarok-kratos-freya-atreus-2022-games-3709x4898-8635.jpg";
-        sha256 = "10cd65feea688918c910698e9d5793a1784125aa19777004e2f6b5f1e26d36b9";
-      };
-    }
-    {
-      src = pkgs.fetchurl {
         url = "https://4kwallpapers.com/images/wallpapers/pastel-digital-art-3840x2160-17275.jpg";
         sha256 = "7a84cad756577911fffdc7c8d28a31a86f76dcacdd59c4b9c1a7ea96d8d0f503";
       };
@@ -569,6 +563,66 @@ let
       src = pkgs.fetchurl {
         url = "https://4kwallpapers.com/images/wallpapers/aston-martin-db12-s-5227x6999-26242.jpg";
         sha256 = "f87867d3b913955ad044639ee514a414e63db87ef23afc93d5502157415998d8";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/assassins-creed-3840x2160-26403.jpg";
+        sha256 = "a3ffb3fb777cfe1fb34c9c3248a55548162dfbe8237b277e2bd71af1cb99341e";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/marvel-rivals-key-3840x2160-16076.jpeg";
+        sha256 = "9dc3b5c1998b42c5e347df2fd37bcef52d49b9147bb4cb86717c05675e7863fa";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/god-of-war-ragnarok-kratos-freya-atreus-2022-games-3840x2160-8677.jpg";
+        sha256 = "bbdb01eedbe83af432265ece2b15180120bc942452e5d48bb0a6500b711433e2";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/fortnite-overwatch-3840x2160-26455.jpg";
+        sha256 = "de3fa93a78d0621371603a1403dbcfd28751f9e5c9901e04a963d55a9a48504d";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/opel-gse-27fe-5120x2880-26434.jpg";
+        sha256 = "785fb72ef00b7765925e7c358e72dd5d61c21ff997108fc7207c2d758ce691cc";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/zhuang-fangyi-5k-5120x2880-26452.jpg";
+        sha256 = "1293582bbc05d6e40607dcc2b45b725e1000dfceeed67b9111248086b1e15924";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/angel-wings-peach-3840x2160-13525.png";
+        sha256 = "ce13ef9cd636964209d9675a81ee16b1bbf079931080cddfa98c2b50f0a7b593";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/huawei-p50-pocket-stock-girly-backgrounds-white-background-5120x2880-7173.png";
+        sha256 = "4ece27532268ddcd784b99f4365014f4cc216516b875a845c70ca54a826488cb";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/valley-of-funes-mountains-village-countryside-landscape-5580x3721-1350.jpg";
+        sha256 = "a2497e385f197ccf9b795cea3232044aaa60e779a170a7169dbba09a2977a8ed";
+      };
+    }
+    {
+      src = pkgs.fetchurl {
+        url = "https://4kwallpapers.com/images/wallpapers/3d-background-4416x2484-10866.jpg";
+        sha256 = "8454c59ec638252fefe37fdc8da337eee2d94d101dcef72f7361d0a0b93ac113";
       };
     }
   ];
