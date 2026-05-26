@@ -102,6 +102,7 @@
       sqlite
       lazysql
       sqlit-tui
+      opencode
       qwen-code
       podman-tui
       pods
