@@ -85,6 +85,7 @@ in
         gnome-font-viewer
         gnome-calendar
         gnome-calculator
+        gnome-clocks
         decibels
         baobab
         loupe
