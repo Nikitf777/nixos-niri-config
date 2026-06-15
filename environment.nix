@@ -79,6 +79,7 @@
       gg-jj
       gnumake
       ninja
+      cloc
       gcc
       clang
       meson
