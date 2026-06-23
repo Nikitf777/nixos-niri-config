@@ -90,7 +90,7 @@
       uv
       vala
       typescript
-      nodejs_25
+      nodejs_26
       deno
       bun
       dotnet-sdk_10
