@@ -45,7 +45,7 @@ binds {
     Print hotkey-overlay-title="Screenshot (Interactive)" { screenshot; }
     Super+Shift+Q hotkey-overlay-title="Quit Niri" { quit; }
     Super+E hotkey-overlay-title="Open File Manager: Files" { spawn "nautilus" "-w"; }
-    Super+T hotkey-overlay-title="Open Terminal: Ghostty" { spawn "ghostty"; }
+    Super+T hotkey-overlay-title="Open Terminal: Ghostty" { spawn "ghostty" "+new-window"; }
     Scroll_Lock hotkey-overlay-title="Toggle Overview" { toggle-overview; }
     Super+H hotkey-overlay-title="Show Hotkey Overlay" { show-hotkey-overlay; }
 }
