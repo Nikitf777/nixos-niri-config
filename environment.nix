@@ -84,7 +84,10 @@
       clang
       meson
       cmake
-      rustup
+      rustc
+      cargo
+      rustfmt
+      clippy
       rust-analyzer
       python3
       uv
