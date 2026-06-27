@@ -2,6 +2,7 @@
 {
   # Enable sound with pipewire.
   services = {
+    upower.enable = true;
     pulseaudio.enable = false;
     pipewire = {
       enable = true;
