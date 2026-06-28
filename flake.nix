@@ -22,6 +22,11 @@
     };
 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+
+    freesmlauncher = {
+      url = "github:FreesmTeam/FreesmLauncher/develop";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -33,6 +38,7 @@
       silentSDDM,
       quickshell,
       nix-flatpak,
+      freesmlauncher,
     }@inputs:
     let
       system = "x86_64-linux";

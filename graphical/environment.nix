@@ -18,6 +18,7 @@ in
         gpu-screen-recorder-gtk
         gpu-viewer
         proton-vpn
+        freesmlauncher
       ]
       ++ [
         gamescope
