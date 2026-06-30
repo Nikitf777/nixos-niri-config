@@ -19,3 +19,5 @@ jq --arg light $light_bg --arg dark $dark_bg '
     | save -f ~/.local/state/DankMaterialShell/session.json
 
 cp -v graphical/desktop/config/DankMaterialShell/settings.json ~/.config/DankMaterialShell/settings.json
+
+dms restart
