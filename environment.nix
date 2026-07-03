@@ -42,6 +42,7 @@
       tmux
       herdr
       neovim
+      helix
       bat
       ripgrep
       btop
