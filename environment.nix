@@ -40,6 +40,7 @@
       nufmt
       zellij
       tmux
+      herdr
       neovim
       bat
       ripgrep
