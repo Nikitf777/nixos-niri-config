@@ -83,6 +83,7 @@
       ninja
       cloc
       gcc
+      gdb
       clang
       lldb
       meson
