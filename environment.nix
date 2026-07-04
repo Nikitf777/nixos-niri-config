@@ -84,6 +84,7 @@
       cloc
       gcc
       clang
+      lldb
       meson
       cmake
       rustc
