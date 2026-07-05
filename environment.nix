@@ -43,6 +43,7 @@
       herdr
       neovim
       helix
+      fresh-editor
       bat
       ripgrep
       btop
