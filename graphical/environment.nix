@@ -12,6 +12,7 @@ in
     systemPackages =
       with pkgs;
       [
+        labwc
         mangohud
         mangojuice
         goverlay
