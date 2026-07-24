@@ -100,8 +100,15 @@
       nodejs_26
       deno
       bun
-      dotnet-sdk_10
-      dotnet-aspnetcore_10
+      (
+        with dotnetCorePackages;
+        dotnetCorePackages.combinePackages [
+          sdk_8_0
+          aspnetcore_8_0
+          sdk_10_0
+          aspnetcore_10_0
+        ]
+      )
       jdk25
       go
       zig
