@@ -39,7 +39,6 @@
       nufmt
       zellij
       tmux
-      herdr
       neovim
       helix
       fresh-editor
