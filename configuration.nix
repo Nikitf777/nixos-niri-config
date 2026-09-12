@@ -23,8 +23,16 @@
       "nix-command"
       "flakes"
     ];
-    trusted-substituters = [ "https://freesmlauncher.cachix.org" ];
-    trusted-public-keys = [ "freesmlauncher.cachix.org-1:Jcp5Q9wiLL+EDv8Mh7c6L9xGk+lXr7/otpKxMOuBuDs=" ];
+    trusted-substituters = [
+      "https://noctalia.cachix.org"
+      "https://freesmlauncher.cachix.org"
+    ];
+    trusted-public-keys = [
+      "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
+      "freesmlauncher.cachix.org-1:Jcp5Q9wiLL+EDv8Mh7c6L9xGk+lXr7/otpKxMOuBuDs="
+    ];
+
+    extra-substituters = [ ];
   };
 
   security = {

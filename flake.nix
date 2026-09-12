@@ -2,7 +2,7 @@
   description = "A niri + dms config";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
     nixos-hardware.url = "github:Nikitf777/nixos-hardware/16-e0105nw";
 
@@ -16,9 +16,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/quickshell/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia/cachix";
     };
 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
@@ -36,7 +35,7 @@
       nixos-hardware,
       home-manager,
       silentSDDM,
-      quickshell,
+      noctalia,
       nix-flatpak,
       freesmlauncher,
     }@inputs:

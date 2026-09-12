@@ -7,6 +7,7 @@
 {
   imports = [
     inputs.silentSDDM.nixosModules.default
+    inputs.noctalia.nixosModules.default
   ];
 
   programs = {
@@ -21,16 +22,12 @@
       enable = true;
       useNautilus = true;
     };
-    dms-shell = {
+
+    noctalia = {
       enable = true;
-
-      systemd = {
-        enable = true; # Systemd service for auto-start
-        restartIfChanged = true; # Auto-restart dms.service when dms-shell changes
-      };
-
-      quickshell.package = inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell;
+      systemd.enable = true;
     };
+
     nautilus-open-any-terminal = {
       enable = true;
       terminal = "ghostty";

@@ -1,0 +1,210 @@
+config_version = 8
+
+[accessibility]
+ui_scale = 1.25
+
+[bar.default]
+capsule = true
+concave_edge_corners = false
+end = [
+    "media",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center"
+]
+margin_ends = 0
+scale = 1.25
+start = [ "launcher", "workspaces", "wallpaper", "sysmon" ]
+thickness = 40
+widget_spacing = 10
+
+    [bar.default.dead_zone.actions]
+    scroll_down = "workspace-switch next"
+    scroll_left = "workspace-switch prev"
+    scroll_right = "workspace-switch next"
+    scroll_up = "workspace-switch prev"
+
+[brightness]
+enable_ddcutil = true
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[[control_center.shortcuts]]
+type = "dark_mode"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.5
+concave_edge_corners = false
+enabled = true
+launcher_position = "start"
+pinned = [
+    "org.gnome.Nautilus",
+    "com.mitchellh.ghostty",
+    "helium",
+    "google-chrome",
+    "code",
+    "dev.zed.Zed",
+    "github-desktop",
+    "net.nokyan.Resources",
+    "io.missioncenter.MissionCenter",
+    "org.gnome.TextEditor",
+    "org.telegram.desktop",
+    "discord",
+    "steam",
+    "io.github.kolunmi.Bazaar"
+]
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
+
+[hooks]
+session_locked = "niri msg action power-off-monitors"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 180.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660.0
+
+[lockscreen]
+blur_intensity = 0.99999997764825821
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 961.0
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+
+[shell]
+niri_overview_type_to_launch_enabled = true
+polkit_agent = true
+
+    [shell.animation]
+    speed = 1.5000000223517418
+
+    [shell.panel]
+    clipboard_position = "top_right"
+    open_near_click_clipboard = true
+    open_near_click_wallpaper = true
+    wallpaper_placement = "floating"
+
+[theme]
+builtin = "Noctalia"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "ghostty", "helix", "niri", "qt" ]
+    community_ids = [
+        "opencode",
+        "pi-agent",
+        "zen-browser",
+        "discord",
+        "telegram",
+        "neovim",
+        "obsidian",
+        "vscode",
+        "zed",
+        "heroiclauncher",
+        "prismlauncher",
+        "steam",
+        "obs",
+        "hyprtoolkit",
+        "yazi"
+    ]
+
+[wallpaper]
+directory = "/run/current-system/sw/share/backgrounds"
+directory_dark = "/run/current-system/sw/share/backgrounds/dark"
+directory_light = "/run/current-system/sw/share/backgrounds/light"
+
+    [wallpaper.default]
+    path = "/run/current-system/sw/share/backgrounds/dark/0jd3q0whyi296kp3lmysbm9jmysz7ri4-dreamlike-3840x3840-14464.jpg"
+
+    [wallpaper.last]
+    path = "/run/current-system/sw/share/backgrounds/dark/0jd3q0whyi296kp3lmysbm9jmysz7ri4-dreamlike-3840x3840-14464.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/run/current-system/sw/share/backgrounds/dark/0jd3q0whyi296kp3lmysbm9jmysz7ri4-dreamlike-3840x3840-14464.jpg"
+
+[widget.clock]
+format = "{:%H:%M %d.%m.%y %a}"
+
+[widget.sysmon]
+display = "text"
+stat = "ram_pct"
+
+[widget.workspaces]
+display = "none"
+
+    [widget.workspaces.actions]
+    right = "exec niri msg action toggle-overview"
+    scroll_left = "workspace-switch prev"
+    scroll_right = "workspace-switch next"
