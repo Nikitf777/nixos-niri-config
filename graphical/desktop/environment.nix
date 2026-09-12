@@ -99,7 +99,6 @@ in
 
         # Development (GUI)
         github-desktop
-        gitbutler
         vscode
         zed-editor
         devtoolbox
