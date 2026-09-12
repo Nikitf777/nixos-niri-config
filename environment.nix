@@ -49,6 +49,7 @@
       nvtopPackages.full
       wl-clipboard
       jq
+      toml-cli
       yazi
       fd
       television
