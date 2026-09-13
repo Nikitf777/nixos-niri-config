@@ -103,8 +103,6 @@
       (
         with dotnetCorePackages;
         dotnetCorePackages.combinePackages [
-          sdk_8_0
-          aspnetcore_8_0
           sdk_10_0
           aspnetcore_10_0
         ]
